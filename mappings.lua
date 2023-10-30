@@ -17,6 +17,9 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
+    ["<leader>T"] = { name = "Tab" },
+    ["<leader>Tn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+    ["<leader>Tc"] = { "<cmd>tabclose<cr>", desc = "Close tab" },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
